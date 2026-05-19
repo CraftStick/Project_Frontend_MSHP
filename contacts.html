@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — История языка C++</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">История <span>C++</span></a>
+    <nav class="site-nav" aria-label="Основное меню">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="origins.html">Зарождение</a></li>
+        <li><a href="evolution.html">Стандарты</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <header class="contact-header">
+      <img class="contact-logo" src="img/cpp-logo.svg" alt="Логотип C++" width="100" height="112">
+      <h1>Обратная связь</h1>
+      <p>Оставьте вопрос или комментарий о проекте — мы ответим на указанную почту.</p>
+    </header>
+
+    <section class="contact-card">
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Тема</label>
+          <select id="topic" name="topic">
+            <option value="question">Вопрос по C++</option>
+            <option value="site">Замечание к сайту</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+
+        <fieldset class="contact-checkboxes">
+          <legend>Интерес к разделам</legend>
+          <div class="checkbox-list">
+            <label class="checkbox-pill">
+              <input type="checkbox" id="hist" name="interest" value="history">
+              <span>История языка</span>
+            </label>
+            <label class="checkbox-pill">
+              <input type="checkbox" id="std" name="interest" value="standards">
+              <span>Стандарты C++</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" required placeholder="Напишите ваш вопрос или отзыв…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Отправить сообщение</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Учебный проект «История языка C++» &copy; 2026</p>
+  </footer>
+</body>
+</html>
