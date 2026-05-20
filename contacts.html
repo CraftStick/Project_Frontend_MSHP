@@ -9,13 +9,7 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">История <span>C++</span></a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-burger" aria-label="Открыть меню">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav class="site-nav" aria-label="Основное меню">
+    <nav class="site-nav">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="origins.html">Зарождение</a></li>
@@ -28,7 +22,7 @@
 
   <main class="contact-page">
     <header class="contact-header">
-      <img class="contact-logo" src="img/cpp-logo.svg" alt="Логотип C++" width="100" height="112">
+      <img class="contact-logo" src="img/cpp-logo.png" alt="Логотип C++" width="100" height="100">
       <h1>Обратная связь</h1>
       <p>Оставьте вопрос или комментарий о проекте — мы ответим на указанную почту.</p>
     </header>
@@ -57,15 +51,13 @@
 
         <fieldset class="contact-checkboxes">
           <legend>Интерес к разделам</legend>
-          <div class="checkbox-list">
-            <label class="checkbox-pill">
-              <input type="checkbox" id="hist" name="interest" value="history">
-              <span>История языка</span>
-            </label>
-            <label class="checkbox-pill">
-              <input type="checkbox" id="std" name="interest" value="standards">
-              <span>Стандарты C++</span>
-            </label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="hist" name="interest" value="history">
+            <label for="hist">История языка</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="std" name="interest" value="standards">
+            <label for="std">Стандарты C++</label>
           </div>
         </fieldset>
 
